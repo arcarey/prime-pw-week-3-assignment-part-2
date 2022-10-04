@@ -48,16 +48,35 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
-
+for (eachStar of stars) {
+  console.log(eachStar);
+}
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let i=0;
+while (i < stars.length){
+  console.log(stars[i])
+  i++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+i = 0 
+//is it bad form to reuse a global variable as an iterator in a new while loop? Would you create a new iterating variable every time with a different name? 
+//Or maybe we never come across this in real life because it would always make more sense to use a for-loop when using this sort of counter interval? 
+while  (i<6){
+  console.log (i);
+ i ++
+}
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+i = 10
+while (i>4) {
+  console.log(i);
+  i--
+}
